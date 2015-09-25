@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>jquery.parallaxmouse</title>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../dist/jquery.parallaxmouse.min.js"></script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        #banner {
+            width: 100%;
+            height: 400px;
+            max-height: 400px;
+            position: relative;
+            margin-top: 200px;
+            background: #2f2f6d;
+            overflow: hidden;
+        }
+        .pelm {
+            position: absolute;
+        }
+        #warpbg {
+            top: -200px;
+            left: -350px;
+        }
+        #star1 {
+            top: 150px;
+            right: 200px;
+        }
+        #star2 {
+            top: 220px;
+            right: 500px;
+        }
+        #star3 {
+            bottom: 20px;
+            right: 20px;
+        }
+        #star4 {
+            top: 40px;
+            left: 290px;
+        }
+        #star5 {
+            bottom: 138px;
+            left: 170px;
+        }
+        #planet {
+            top: -103px;
+            left: -103px;
+        }
+        #robot {
+            top: 200px;
+            right: 250px;
+        }
+        #astronaut {
+            top: 220px;
+            right: 100px;
+        }
+        #asteroid {
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="banner">
+    <img id="warpbg" class="pelm left top" src="images/warpbg.png">
+    <img id="star1" class="pelm top" src="images/star1.png">
+    <img id="star2" class="pelm top" src="images/star2.png">
+    <img id="star3" class="pelm" src="images/star3.png">
+    <img id="star4" class="pelm left top" src="images/star4.png">
+    <img id="star5" class="pelm left" src="images/star5.png">
+    <img id="planet" class="pelm left top" src="images/planet.png">
+    <img id="robot" class="pelm top" src="images/robot.png">
+    <img id="astronaut" class="pelm top" src="images/astronaut.png">
+    <img id="asteroid" class="pelm" src="images/asteroid.png">
+</div>
+
+<script>
+    // Plugin Test
+    $(window).parallaxmouse({
+        invert: true,
+        range: 400,
+        elms: [
+            {el: $('#warpbg'), rate: 0.1},
+            {el: $('#star1'), rate: 0.2},
+            {el: $('#star2'), rate: 0.2},
+            {el: $('#star3'), rate: 0.2},
+            {el: $('#star4'), rate: 0.2},
+            {el: $('#star5'), rate: 0.2},
+            {el: $('#planet'), rate: 0.3},
+            {el: $('#robot'), rate: 0.4},
+            {el: $('#astronaut'), rate: 0.48},
+            {el: $('#asteroid'), rate: 0.7}
+        ]
+    });
+</script>
+</body>
+</html>

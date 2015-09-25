@@ -20,7 +20,7 @@ Wil Neeley ( [@wilneeley](http://twitter.com/wilneeley) / [github.com](https://g
 
 Include `jquery.parallaxmouse.min.js` after jQuery.
 
-## Element Markup/Plugin Usage
+## Get Started
 
 ```html
 <div id="galaxy">

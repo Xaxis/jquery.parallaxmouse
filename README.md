@@ -31,9 +31,9 @@ Include `jquery.parallaxmouse.min.js` after jQuery.
 ```
 
 jQuery.parallaxmouse uses class names to determine the styling origin direction for each element. If an element is 
-positioned from the `left` in CSS make sure to add the `left` class. Likewise for the top. If an element is positioned
-from the `right`, don't include the `left` class. If the element is positioned from the `bottom` don't include the `top`
-class.
+positioned from the `left` in CSS make sure to add the `left` class. Likewise for the `top`, use the `top` class. If an 
+element is positioned from the `right`, don't include the `left` class. If the element is positioned from the `bottom` 
+don't include the `top` class.
 
 ```javascript
 jQuery(window).parallaxmouse({
